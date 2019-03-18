@@ -1,6 +1,5 @@
 global class AcctIndUpd implements Database.Batchable<sObject> {
 	/* This is Guna */
-	/* this is for Jayu Project */
     global static string query = 'select id, name from account where name=\'Acme1\'';
     global Database.QueryLocator start(Database.BatchableContext bc){
         return Database.getQueryLocator(query);
